@@ -1,0 +1,71 @@
+.shop {
+  display: flex;
+  width: 100%;
+
+  .items {
+    display: flex;
+    flex-direction: column;
+    width: 80%;
+
+    .items-content {
+      display: flex;
+      justify-content: space-between;
+      width: 100%;
+      padding-top: 70px;
+      padding-left: 20px;
+
+      .icons {
+        .fa-list,
+        .fa-th {
+          margin: 10px 5px;
+          font-size: 20px;
+          color: $orange;
+        }
+      }
+
+      .sorting {
+        width: 200px;
+        height: 50px;
+        margin-right: 200px;
+        border: 1px solid lightgray;
+        background-color: transparent;
+      }
+    }
+
+    .shop-cards {
+      display: flex;
+      flex-wrap: wrap;
+
+      .shop-cards-card {
+        display: flex;
+        flex-direction: column;
+        width: 23%;
+        background-color: $light-brown;
+        margin: 25px;
+
+        img {
+          width: 100%;
+        }
+
+        .card-price {
+          padding: 10px;
+          font-family: $font;
+          text-align: center;
+          color: $orange;
+        }
+
+        .card-button {
+          height: 50px;
+          border: none;
+          background-color: #d57f2c;
+          color: white;
+
+          &:hover {
+            background-color: $orange;
+            cursor: pointer;
+          }
+        }
+      }
+    }
+  }
+}

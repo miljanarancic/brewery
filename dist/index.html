@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="index.css">
+  <title>Brewery Birra33</title>
+</head>
+<body>
+  <header class="header">
+    <nav class="navigation">
+      <div class="navigation-logo">
+        <img src="assets/logo.png" alt="Logo">
+      </div>
+      <ul class="navigation-list">
+        <li><a href="#">HOME</a></li>
+        <li><a href="#">BREWERY</a></li>
+        <li><a href="#">EVENTS</a></li>
+        <li><a href="#">RESERVATION</a></li>
+        <li><a href="#">FEATURES</a></li>
+        <li><a href="#">BLOG</a></li>
+        <li><a href="#">CONTACTS</a></li>
+      </ul>
+    </nav>
+  </header>
+  
+  <section class="shop">
+    <aside class="aside">
+      <div class="aside-cart">
+        <h3>MY CART</h3>
+        <ol class="aside-cart-list">
+          <li>No items in your cart</li>
+        </ol>
+      </div>
+      <div class="aside-filter">
+        <h3>PRICE FILTER</h3>
+        <span>LINE</span>
+        <button class="filter-button">FILTER</button>
+        <span class="filter-price-range">Price $180 - $221</span>
+      </div>
+      <div class="aside-categories">
+        <h3>CATEGORIES</h3>
+        <ul class="categories-list">
+          <li class="categories-list-item">Ale</li>
+          <li class="categories-list-item">Blonde</li>
+          <li class="categories-list-item">Cider</li>
+          <li class="categories-list-item">Dark Beer</li>
+          <li class="categories-list-item">Light Beer</li>
+          <li class="categories-list-item">Uncategorized</li>
+          <li class="categories-list-item">Wheat Beer</li>
+        </ul>
+      </div>
+    </aside>
+
+    <div class="items">
+      <div class="items-content">
+        <div class="icons">
+          <i class="fas fa-th"></i>
+          <i class="fas fa-list"></i>
+          <span>Showing 1-9 of 10 results</span>
+        </div>
+        <select class="sorting">
+          <option selected disabled hidden>Sort by</option>
+          <option value="Popularity">Popularity</option>
+          <option value="Price low to high">Price low to high</option>
+          <option value="Price high to low">Price high to low</option>
+          <option value="Rating">Rating</option>
+          <option value="Latest">Latest</option>
+        </select>
+      </div>
+
+      <div class="shop-cards">
+          <div class="shop-cards-card">
+            <img src="./assets/beer.png" alt="beer" >
+            <span class="card-price">$100</span>
+            <button class="card-button">ADD TO CART</button>
+          </div>
+          <div class="shop-cards-card">
+            <img src="./assets/beer.png" alt="beer" >
+            <span class="card-price">$100</span>
+            <button class="card-button">ADD TO CART</button>
+          </div>
+          <div class="shop-cards-card">
+            <img src="./assets/beer.png" alt="beer" >
+            <span class="card-price">$100</span>
+            <button class="card-button">ADD TO CART</button>
+          </div>
+          <div class="shop-cards-card">
+            <img src="./assets/beer.png" alt="beer" >
+            <span class="card-price">$100</span>
+            <button class="card-button">ADD TO CART</button>
+          </div>
+          <div class="shop-cards-card">
+            <img src="./assets/beer.png" alt="beer" >
+            <span class="card-price">$100</span>
+            <button class="card-button">ADD TO CART</button>
+          </div>
+          <div class="shop-cards-card">
+            <img src="./assets/beer.png" alt="beer" >
+            <span class="card-price">$100</span>
+            <button class="card-button">ADD TO CART</button>
+          </div>  
+      </div>
+    </div>
+  </section>
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  <script src="https://kit.fontawesome.com/a9e6e2d560.js" crossorigin="anonymous"></script>
+  <script src="index.js"></script>
+</body>
+</html>
