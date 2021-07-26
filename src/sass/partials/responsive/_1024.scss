@@ -1,0 +1,43 @@
+@media (max-width: 1024px) {
+  .header {
+    padding: 0 20px;
+  }
+
+  .shop {
+    flex-direction: column;
+
+    .aside {
+      display: flex;
+      margin-top: 20px;
+      width: 100%;
+
+      &-cart {
+        margin-right: 25px;
+      }
+
+      &-categories {
+        margin-left: 25px;
+      }
+    }
+
+    .items {
+      width: 100%;
+    }
+  }
+
+  .items {
+    .shop-cards {
+      justify-content: space-between;
+
+      .shop-cards-card {
+        &:nth-child(3n+1) {
+          margin-left: 0;
+        }
+      }
+    }
+  }
+
+  .page-modal-content {
+    width: 60%;
+  }
+}

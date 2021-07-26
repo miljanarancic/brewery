@@ -3,10 +3,24 @@ $font: "Fira Sans", sans-serif;
 * {
   box-sizing: border-box;
 }
+
 body {
   margin: 0 auto;
   background-color: #f4e8ce;
 }
+
+.shop {
+  display: flex;
+  padding: 0 200px;
+}
+
+.datepicker-month-year {
+  .ui-datepicker-calendar,
+  .ui-datepicker-current {
+    display: none;
+  }
+}
+
 $brown: #793319;
 $orange: #bf431f;
 $yellow: #e1a03a;

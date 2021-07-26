@@ -4,6 +4,7 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
   <link rel="stylesheet" href="index.css">
   <title>Brewery Birra33</title>
 </head>
@@ -13,6 +14,7 @@
       <div class="navigation-logo">
         <img src="assets/logo.png" alt="Logo">
       </div>
+      <i class="fas fa-bars navigation-button"></i>
       <ul class="navigation-list">
         <li><a href="#">HOME</a></li>
         <li><a href="#">BREWERY</a></li>
@@ -33,11 +35,33 @@
           <li>No items in your cart</li>
         </ol>
       </div>
-      <div class="aside-filter">
-        <h3>PRICE FILTER</h3>
-        <span>LINE</span>
-        <button class="filter-button">FILTER</button>
-        <span class="filter-price-range">Price $180 - $221</span>
+      <div class="aside-filters">
+        <h3 class="filter-title">BEER NAME</h3>
+        <input type="text" class="filter-name">
+
+        <h3 class="filter-title">ABV RANGE</h3>
+        <div class="filter-abv-slider"></div>
+        <p class="filter-abv"></p>
+
+        <h3 class="filter-title">BREWED DATE</h3>
+        <p class="filter-brewed">Brewed after: <input type="text" class="filter-brewed-after"></p>
+        <p class="filter-brewed">Brewed before: <input type="text" class="filter-brewed-before"></p>
+
+        <h3 class="filter-title">FOOD</h3>
+        <label class="filter-radio">
+          <input type="radio" name="food" value="chicken" /> Chicken
+        </label>
+        <label class="filter-radio">
+          <input type="radio" name="food" value="cake" /> Cake
+        </label>
+        <label class="filter-radio">
+          <input type="radio" name="food" value="cheese" /> Cheese
+        </label>
+        <label class="filter-radio">
+          <input type="radio" name="food" value="salad" /> Salad
+        </label>
+
+        <button class="filters-button">FILTER</button>
       </div>
       <div class="aside-categories">
         <h3>CATEGORIES</h3>
@@ -56,8 +80,8 @@
     <div class="items">
       <div class="items-content">
         <div class="icons">
-          <i class="fas fa-th"></i>
-          <i class="fas fa-list"></i>
+          <i class="fas fa-th grid-button"></i>
+          <i class="fas fa-list list-button"></i>
           <span>Showing 1-9 of 10 results</span>
         </div>
         <select class="sorting">
@@ -70,41 +94,44 @@
         </select>
       </div>
 
-      <div class="shop-cards">
-          <div class="shop-cards-card">
-            <img src="./assets/beer.png" alt="beer" >
-            <span class="card-price">$100</span>
-            <button class="card-button">ADD TO CART</button>
-          </div>
-          <div class="shop-cards-card">
-            <img src="./assets/beer.png" alt="beer" >
-            <span class="card-price">$100</span>
-            <button class="card-button">ADD TO CART</button>
-          </div>
-          <div class="shop-cards-card">
-            <img src="./assets/beer.png" alt="beer" >
-            <span class="card-price">$100</span>
-            <button class="card-button">ADD TO CART</button>
-          </div>
-          <div class="shop-cards-card">
-            <img src="./assets/beer.png" alt="beer" >
-            <span class="card-price">$100</span>
-            <button class="card-button">ADD TO CART</button>
-          </div>
-          <div class="shop-cards-card">
-            <img src="./assets/beer.png" alt="beer" >
-            <span class="card-price">$100</span>
-            <button class="card-button">ADD TO CART</button>
-          </div>
-          <div class="shop-cards-card">
-            <img src="./assets/beer.png" alt="beer" >
-            <span class="card-price">$100</span>
-            <button class="card-button">ADD TO CART</button>
-          </div>  
+      <div class="shop-cards"></div>
+
+      <div class="shop-pagination">
+        <button class="shop-pagination-previous" disabled="disabled">PREVIOUS</button>
+        <button class="shop-pagination-next">NEXT</button>
       </div>
     </div>
   </section>
+
+  <div class="page-loader">
+    <div class="page-loader-circle"></div>
+  </div>
+
+  <div class="page-modal">
+    <div class="page-modal-content">
+      <img class="page-modal-content-image" />
+      <h3 class="page-modal-content-name"></h3>
+      <span>Ingredients:</span>
+      <ol class="page-modal-content-ingredients">
+        <li>
+          Hops:
+          <ul class="ingredients-hops-list"></ul>
+        </li>
+        <li>
+          Malt:
+          <ul class="ingredients-malt-list"></ul>
+        </li>
+        <li>Ale: <span class="ingredients-yeast"></span></li>
+      </ol>
+      <p class="page-modal-content-text">
+        Best to pair with: <span class="page-modal-content-food"></span>
+      </p>
+      <i class="fas fa-times page-modal-content-close"></i>
+    </div>
+  </div>
+
   <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
   <script src="https://kit.fontawesome.com/a9e6e2d560.js" crossorigin="anonymous"></script>
   <script src="index.js"></script>
 </body>

@@ -1,0 +1,16 @@
+@media (max-width: 425px) {
+  .shop {
+    .items {
+      .shop-cards {
+        .shop-cards-card {
+          width: 100%;
+          margin-left: 0 !important;
+        }
+      }
+    }
+  }
+
+  .page-modal-content {
+    width: 90%;
+  }
+}

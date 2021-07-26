@@ -1,70 +1,164 @@
-.shop {
+.items {
   display: flex;
-  width: 100%;
+  flex-direction: column;
+  width: 80%;
 
-  .items {
+  .items-content {
     display: flex;
-    flex-direction: column;
-    width: 80%;
+    justify-content: space-between;
+    width: 100%;
+    padding-top: 70px;
+    padding-left: 20px;
 
-    .items-content {
-      display: flex;
-      justify-content: space-between;
-      width: 100%;
-      padding-top: 70px;
-      padding-left: 20px;
-
-      .icons {
-        .fa-list,
-        .fa-th {
-          margin: 10px 5px;
-          font-size: 20px;
-          color: $orange;
-        }
-      }
-
-      .sorting {
-        width: 200px;
-        height: 50px;
-        margin-right: 200px;
-        border: 1px solid lightgray;
-        background-color: transparent;
+    .icons {
+      .grid-button,
+      .list-button {
+        cursor: pointer;
+        margin: 10px 5px;
+        font-size: 20px;
+        color: $orange;
       }
     }
 
-    .shop-cards {
+    .sorting {
+      width: 200px;
+      height: 50px;
+      border: 1px solid lightgray;
+      background-color: transparent;
+    }
+  }
+
+  .shop {
+    &-cards {
       display: flex;
       flex-wrap: wrap;
-
+    
       .shop-cards-card {
         display: flex;
         flex-direction: column;
-        width: 23%;
+        width: calc(33.33% - 25px);
         background-color: $light-brown;
-        margin: 25px;
+        margin: 25px 0 25px 25px;
+        transition: background-color 0.2s;
 
+        &:not(.list-style):hover {
+          background-color: #f4e8ce;
+        }
+    
         img {
           width: 100%;
         }
-
-        .card-price {
-          padding: 10px;
-          font-family: $font;
+    
+        .card-image-wrapper {
+          cursor: pointer;
+          height: 300px;
+          padding: 20px;
           text-align: center;
-          color: $orange;
-        }
-
-        .card-button {
-          height: 50px;
-          border: none;
-          background-color: #d57f2c;
-          color: white;
-
-          &:hover {
-            background-color: $orange;
-            cursor: pointer;
+    
+          .card-image {
+            height: 100%;
+            width: auto;
           }
         }
+    
+        .card-content-wrapper {
+          display: flex;
+          flex-direction: column;
+    
+          .card-name {
+            margin: 10px;
+            font-family: $font;
+            text-align: center;
+            color: $orange;
+            white-space: nowrap;
+            overflow: hidden;
+            text-overflow: ellipsis;
+          }
+    
+          .card-description {
+            display: none;
+            margin-bottom: 25px;
+            font-size: 14px;
+            font-family: $font;
+          }
+    
+          .card-button {
+            height: 50px;
+            border: none;
+            background-color: #d57f2c;
+            color: white;
+            transition: background-color 0.2s;
+    
+            &:hover {
+              background-color: $orange;
+              cursor: pointer;
+            }
+          }
+        }
+    
+        &.list-style {
+          width: 100%;
+          flex-direction: row;
+          margin-bottom: 0;
+    
+          .card-image-wrapper {
+            flex: 0 0 25%;
+          }
+    
+          .card-content-wrapper {
+            align-items: flex-start;
+            padding: 0 45px 0 0;
+    
+            .card-name {
+              color: #000;
+              margin: 25px 0;
+              font-size: 32px;
+            }
+    
+            .card-description {
+              display: block;
+            }
+    
+            .card-button {
+              width: 180px;
+            }
+          }
+        }
+      }
+    }
+
+    &-pagination {
+      display: flex;
+      justify-content: center;
+      margin-bottom: 50px;
+
+      &-previous,
+      &-next {
+        cursor: pointer;
+        height: 50px;
+        width: 100px;
+        border: none;
+        outline: none;
+        color: #fff;
+        background-color: #d57f2c;
+
+        &:hover {
+          background-color: $orange;
+        }
+
+        &:disabled {
+          cursor: not-allowed;
+          background-color: #ababab;
+          color: #fff;
+        }
+      }
+
+      &-previous {
+        margin-right: 10px;
+      }
+
+      &-next {
+        margin-left: 10px;
       }
     }
   }
