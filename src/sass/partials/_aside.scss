@@ -28,7 +28,7 @@
           &-image {
             height: 100%;
             width: auto;
-            
+
             &-wrapper {
               height: 100px;
               width: 120px;
@@ -44,7 +44,7 @@
             display: flex;
             flex-direction: column;
             width: 100%;
-            
+
             &-name {
               margin: 0 15px 10px 0;
               margin-bottom: 10px;
@@ -88,7 +88,7 @@
         margin-top: 0;
       }
     }
-    
+
     .filter-abv {
       margin: 10px 0 0 50px;
       padding-top: 5px;
@@ -125,6 +125,7 @@
 
     .filters-button {
       margin-top: 20px;
+      margin-bottom: 20px;
       margin-left: auto;
       padding: 10px 0;
       width: 110px;
@@ -134,7 +135,7 @@
       color: white;
     }
   }
-
+  /*
   &-categories {
     width: 100%;
     height: 300px;
@@ -154,4 +155,5 @@
       }
     }
   }
+  */
 }

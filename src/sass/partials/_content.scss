@@ -32,7 +32,7 @@
     &-cards {
       display: flex;
       flex-wrap: wrap;
-    
+
       .shop-cards-card {
         display: flex;
         flex-direction: column;
@@ -44,27 +44,27 @@
         &:not(.list-style):hover {
           background-color: #f4e8ce;
         }
-    
+
         img {
           width: 100%;
         }
-    
+
         .card-image-wrapper {
           cursor: pointer;
           height: 300px;
           padding: 20px;
           text-align: center;
-    
+
           .card-image {
             height: 100%;
             width: auto;
           }
         }
-    
+
         .card-content-wrapper {
           display: flex;
           flex-direction: column;
-    
+
           .card-name {
             margin: 10px;
             font-family: $font;
@@ -74,51 +74,53 @@
             overflow: hidden;
             text-overflow: ellipsis;
           }
-    
+
           .card-description {
             display: none;
             margin-bottom: 25px;
             font-size: 14px;
             font-family: $font;
           }
-    
+
           .card-button {
             height: 50px;
             border: none;
             background-color: #d57f2c;
             color: white;
             transition: background-color 0.2s;
-    
+
             &:hover {
               background-color: $orange;
               cursor: pointer;
             }
           }
         }
-    
+
         &.list-style {
           width: 100%;
           flex-direction: row;
           margin-bottom: 0;
-    
+
           .card-image-wrapper {
             flex: 0 0 25%;
           }
-    
+
           .card-content-wrapper {
             align-items: flex-start;
             padding: 0 45px 0 0;
-    
+
             .card-name {
               color: #000;
               margin: 25px 0;
               font-size: 32px;
+              white-space: unset;
+              text-align: left;
             }
-    
+
             .card-description {
               display: block;
             }
-    
+
             .card-button {
               width: 180px;
             }
@@ -131,6 +133,7 @@
       display: flex;
       justify-content: center;
       margin-bottom: 50px;
+      margin-top: 20px;
 
       &-previous,
       &-next {

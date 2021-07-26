@@ -17,7 +17,6 @@ const ingredientsMaltList = $('.ingredients-malt-list')
 const ingredientsYeast = $('.ingredients-yeast')
 const pageModalFood = $('.page-modal-content-food')
 const cart = []
-let beerList = []
 let cardListStyle = false
 let params = ''
 let itemsPerPage = 10
@@ -43,10 +42,8 @@ function fetchCards (params) {
         paginationNext.attr('disabled', 'disabled')
       }
 
-      console.log(response)
       response.forEach(beer => {
         createCard(beer)
-        beerList = response
       })
 
       window.scrollTo(0, 0)
