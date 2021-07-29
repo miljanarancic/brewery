@@ -8,24 +8,25 @@
   <link rel="stylesheet" href="index.css">
   <!-- Google Analytics -->
 <script>
-(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-})(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
 
-ga('create', 'UA-XXXX-Y', 'auto');
-ga('send', 'pageview');
+  ga('create', 'UA-XXXX-Y', 'auto');
+  ga('send', 'pageview');
 
 </script>
 <!-- End Google Analytics -->
-
-<script>(function(d, s, id) {
-var js, fjs = d.getElementsByTagName(s)[0];
-if (d.getElementById(id)) return;
-js = d.createElement(s); js.id = id;
-js.src = "https://connect.facebook.net/en_US/sdk.js#xfbml=1&version=v3.0";
-fjs.parentNode.insertBefore(js, fjs);
-}(document, 'script', 'facebook-jssdk'));</script>
+<script>
+  (function(d, s, id) {
+  var js, fjs = d.getElementsByTagName(s)[0];
+  if (d.getElementById(id)) return;
+  js = d.createElement(s); js.id = id;
+  js.src = "https://connect.facebook.net/en_US/sdk.js#xfbml=1&version=v3.0";
+  fjs.parentNode.insertBefore(js, fjs);
+  }(document, 'script', 'facebook-jssdk'));
+</script>
   <meta name="description" content="Birra33 is a online brewery shop. This website is using PunkAPI to display beers">
   <title>Brewery Birra33 online shop for beers</title>
 </head>
@@ -47,7 +48,6 @@ fjs.parentNode.insertBefore(js, fjs);
       </ul>
     </nav>
   </header>
-  
   <section class="shop">
     <aside class="aside">
       <div class="aside-cart">
@@ -59,15 +59,12 @@ fjs.parentNode.insertBefore(js, fjs);
       <div class="aside-filters">
         <h3 class="filter-title">BEER NAME</h3>
         <input type="text" class="filter-name">
-
         <h3 class="filter-title">ABV RANGE</h3>
         <div class="filter-abv-slider"></div>
         <p class="filter-abv"></p>
-
         <h3 class="filter-title">BREWED DATE</h3>
         <p class="filter-brewed">Brewed after: <input type="text" class="filter-brewed-after"></p>
         <p class="filter-brewed">Brewed before: <input type="text" class="filter-brewed-before"></p>
-
         <h3 class="filter-title">FOOD</h3>
         <label class="filter-radio">
           <input type="radio" name="food" value="chicken" /> Chicken
@@ -81,11 +78,9 @@ fjs.parentNode.insertBefore(js, fjs);
         <label class="filter-radio">
           <input type="radio" name="food" value="salad" /> Salad
         </label>
-
         <button class="filters-button">FILTER</button>
       </div>
     </aside>
-
     <div class="items">
       <div class="items-content">
         <div class="icons">
@@ -93,20 +88,16 @@ fjs.parentNode.insertBefore(js, fjs);
           <i class="fas fa-list list-button"></i>
         </div>
       </div>
-
       <div class="shop-cards"></div>
-
       <div class="shop-pagination">
         <button class="shop-pagination-previous" disabled="disabled">PREVIOUS</button>
         <button class="shop-pagination-next">NEXT</button>
       </div>
     </div>
   </section>
-
   <div class="page-loader">
     <div class="page-loader-circle"></div>
   </div>
-
   <div class="page-modal">
     <div class="page-modal-content">
       <img class="page-modal-content-image" />
@@ -130,10 +121,9 @@ fjs.parentNode.insertBefore(js, fjs);
     </div>
   </div>
   <div class="fb-share-button" 
-data-href="https://www.your-domain.com/your-page.html" 
-data-layout="button_count">
-</div>
-
+    data-href="https://www.your-domain.com/your-page.html" 
+    data-layout="button_count">
+  </div>
   <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
   <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
   <script src="https://kit.fontawesome.com/a9e6e2d560.js" crossorigin="anonymous"></script>
