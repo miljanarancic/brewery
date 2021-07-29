@@ -1,23 +1,22 @@
 .aside {
-  margin: 80px 0 0;
   width: 20%;
+  margin: 80px 0 0;
 
   &-cart {
     display: flex;
     flex-direction: column;
-    border-bottom: 1px solid white;
+    width: 100%;
     padding: 30px 20px 0;
+    border-bottom: 1px solid white;
     font-family: $font;
     color: $orange;
     background-color: $light-brown;
 
-    width: 100%;
-
     &-list {
+      padding: 0;
       font-family: $font;
       color: white;
       list-style-type: none;
-      padding: 0;
 
       &-item {
         display: flex;
@@ -56,10 +55,10 @@
             }
 
             &-delete {
-              cursor: pointer;
               position: absolute;
               top: 0;
               right: 0;
+              cursor: pointer;
               color: $orange;
 
               &:hover {
@@ -124,36 +123,15 @@
     }
 
     .filters-button {
+      width: 110px;
+      height: 40px;
       margin-top: 20px;
       margin-bottom: 20px;
       margin-left: auto;
       padding: 10px 0;
-      width: 110px;
-      height: 40px;
       border: none;
       background-color: $orange;
       color: white;
     }
   }
-  /*
-  &-categories {
-    width: 100%;
-    height: 300px;
-    padding: 30px 0 0 20px;
-    font-family: $font;
-    color: $orange;
-    background-color: $light-brown;
-
-    .categories-list {
-      color: initial;
-      list-style-type: circle;
-      font-family: $font;
-      padding-left: 20px;
-
-      .categories-list-item {
-        padding: 5px 0;
-      }
-    }
-  }
-  */
 }

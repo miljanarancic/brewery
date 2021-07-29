@@ -57,43 +57,22 @@ body {
             color: #e1a03a; }
 
 .aside {
-  margin: 80px 0 0;
   width: 20%;
-  /*
-  &-categories {
-    width: 100%;
-    height: 300px;
-    padding: 30px 0 0 20px;
-    font-family: $font;
-    color: $orange;
-    background-color: $light-brown;
-
-    .categories-list {
-      color: initial;
-      list-style-type: circle;
-      font-family: $font;
-      padding-left: 20px;
-
-      .categories-list-item {
-        padding: 5px 0;
-      }
-    }
-  }
-  */ }
+  margin: 80px 0 0; }
   .aside-cart {
     display: flex;
     flex-direction: column;
-    border-bottom: 1px solid white;
+    width: 100%;
     padding: 30px 20px 0;
+    border-bottom: 1px solid white;
     font-family: "Fira Sans", sans-serif;
     color: #bf431f;
-    background-color: #e3cfab;
-    width: 100%; }
+    background-color: #e3cfab; }
     .aside-cart-list {
+      padding: 0;
       font-family: "Fira Sans", sans-serif;
       color: white;
-      list-style-type: none;
-      padding: 0; }
+      list-style-type: none; }
       .aside-cart-list-item {
         display: flex;
         margin-bottom: 15px;
@@ -120,10 +99,10 @@ body {
           .aside-cart-list-item .cart-content-amount {
             font-size: 14px; }
           .aside-cart-list-item .cart-content-delete {
-            cursor: pointer;
             position: absolute;
             top: 0;
             right: 0;
+            cursor: pointer;
             color: #bf431f; }
             .aside-cart-list-item .cart-content-delete:hover {
               color: #e1a03a; }
@@ -160,12 +139,12 @@ body {
     .aside-filters .filter-radio {
       margin-top: 5px; }
     .aside-filters .filters-button {
+      width: 110px;
+      height: 40px;
       margin-top: 20px;
       margin-bottom: 20px;
       margin-left: auto;
       padding: 10px 0;
-      width: 110px;
-      height: 40px;
       border: none;
       background-color: #bf431f;
       color: white; }
@@ -198,8 +177,8 @@ body {
       display: flex;
       flex-direction: column;
       width: calc(33.33% - 25px);
-      background-color: #e3cfab;
       margin: 25px 0 25px 25px;
+      background-color: #e3cfab;
       transition: background-color 0.2s; }
       .items .shop-cards .shop-cards-card:not(.list-style):hover {
         background-color: #f4e8ce; }
@@ -239,8 +218,8 @@ body {
             background-color: #bf431f;
             cursor: pointer; }
       .items .shop-cards .shop-cards-card.list-style {
-        width: 100%;
         flex-direction: row;
+        width: 100%;
         margin-bottom: 0; }
         .items .shop-cards .shop-cards-card.list-style .card-image-wrapper {
           flex: 0 0 25%; }
@@ -248,8 +227,8 @@ body {
           align-items: flex-start;
           padding: 0 45px 0 0; }
           .items .shop-cards .shop-cards-card.list-style .card-content-wrapper .card-name {
-            color: #000;
             margin: 25px 0;
+            color: #000;
             font-size: 32px;
             white-space: unset;
             text-align: left; }
@@ -295,11 +274,11 @@ body {
   .page-loader.show {
     display: flex; }
   .page-loader-circle {
+    width: 60px;
+    height: 60px;
     border: 8px solid #fff;
     border-radius: 50%;
     border-top: 8px solid #e1a03a;
-    width: 60px;
-    height: 60px;
     animation: spin 1s linear infinite; }
 
 @keyframes spin {
@@ -317,16 +296,16 @@ body {
   display: none;
   align-items: center;
   justify-content: center;
-  background-color: rgba(0, 0, 0, 0.4);
   z-index: 10;
+  background-color: rgba(0, 0, 0, 0.4);
   font-family: "Fira Sans", sans-serif; }
   .page-modal.show {
     display: flex; }
   .page-modal-content {
     position: relative;
-    max-height: 80vh;
     width: 35%;
     max-width: 800px;
+    max-height: 80vh;
     padding: 20px;
     background-color: #e3cfab;
     overflow-y: auto; }
@@ -341,12 +320,12 @@ body {
     .page-modal-content-text {
       font-weight: 600; }
     .page-modal-content-close {
-      cursor: pointer;
       position: absolute;
       top: 10px;
       right: 10px;
       color: #bf431f;
-      font-size: 30px; }
+      font-size: 30px;
+      cursor: pointer; }
       .page-modal-content-close:hover {
         color: #e1a03a; }
     .page-modal-content span {

@@ -7,8 +7,8 @@
   display: none;
   align-items: center;
   justify-content: center;
-  background-color: rgba(0, 0, 0, 0.4);
   z-index: 10;
+  background-color: rgba(0, 0, 0, 0.4);
   font-family: $font;
 
   &.show {
@@ -17,9 +17,9 @@
 
   &-content {
     position: relative;
-    max-height: 80vh;
     width: 35%;
     max-width: 800px;
+    max-height: 80vh;
     padding: 20px;
     background-color: $light-brown;
     overflow-y: auto;
@@ -43,12 +43,12 @@
     }
 
     &-close {
-      cursor: pointer;
       position: absolute;
       top: 10px;
       right: 10px;
       color: $orange;
       font-size: 30px;
+      cursor: pointer;
 
       &:hover {
         color: $yellow;
